@@ -9,8 +9,8 @@ public class HousesRunner {
 
 		
 	
-		houseBuilder.run(2, 500);
-		houseBuilder.peak(200);
+		houseBuilder.run();
+		//houseBuilder.peak();
 
 	
 	
