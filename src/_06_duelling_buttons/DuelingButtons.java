@@ -14,7 +14,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class DuelingButtons implements ActionListener {
-
+int score = 0;
 	JButton leftButton = new JButton();
 	JButton rightButton = new JButton();
 
@@ -58,12 +58,16 @@ frame.setTitle("Demanding Buttons");
 		rightButton.setPreferredSize(BIG);
 		leftButton.setText("Click Me!");
 		leftButton.setPreferredSize(SMALL);
+		score = score + 1;
+		System.out.println(score);
 		}
 		if (buttonPressed == (rightButton)) {
 			leftButton.setText("No, click me!");
 		leftButton.setPreferredSize(BIG);
 		rightButton.setText("Click Me!");
 		rightButton.setPreferredSize(SMALL);
+		score = score + 1;
+		System.out.println(score);
 		}
 		// Set the text of the rightButton to "No, click Me!"
 		// Set the PREFERRED size of the rightButton to BIG
